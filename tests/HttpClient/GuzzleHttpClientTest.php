@@ -1,8 +1,6 @@
 <?php
 
-
 namespace M00t\QrCodeRenderer\HttpClient;
-
 
 use M00t\QrCodeRenderer\QrCode\Renderer\HttpError;
 

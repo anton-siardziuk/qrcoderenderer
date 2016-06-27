@@ -1,15 +1,18 @@
 <?php
 
-
 namespace M00t\QrCodeRenderer\QrCode\Renderer;
 
+use M00t\QrCodeRenderer\HttpClient\GuzzleHttpClient;
 
-class GoogleChartsRenderer
+class GoogleChartsRenderer implements Renderer
 {
     private $httpClient;
 
-    public function __construct(HttpClient $httpClient)
+    public function __construct(HttpClient $httpClient = null)
     {
+        if ($httpClient === null) {
+            $httpClient = new GuzzleHttpClient();
+        }
         $this->httpClient = $httpClient;
     }
 

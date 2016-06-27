@@ -1,8 +1,6 @@
 <?php
 
-
 namespace M00t\QrCodeRenderer\HttpClient;
-
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\BadResponseException;
