@@ -1,0 +1,21 @@
+{
+    "name": "m00t/qrcoderenderer",
+    "authors": [
+        {
+            "name": "Anton Serdyuk",
+            "email": "anton.serdyuk@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.0",
+        "php": ">=5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "M00t\\QrCodeRenderer\\": "src"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.4"
+    }
+}
